@@ -368,18 +368,13 @@ ig.module('impact.font').requires('impact.image').defines(function() {
         this._loadMetrics(this.data);
         this.parent(ev);
     },widthForString: function(s) {
-        var width = 0, charCode, firstCyrillicCharCode = 1072, lastCyrillicCharCode = 1105;
+        var width = 0, charCode;
         for (var i = 0; i < s.length; i++) {
             charCode = s.charCodeAt(i);
-            if (charCode >= firstCyrillicCharCode && charCode <= lastCyrillicCharCode){
-                width += this.widthMap.Cyrillic + 1;
-            } else {
-                width += this.widthMap[charCode - this.firstChar] + 1;
-            }
+            width += this.getWidthMap[charCode - this.firstChar] + 1;
         }
         return width;
     },draw: function(text, x, y, align) {
-        var minus = 1007;
         if (typeof (text) != 'string') {
             text = text.toString();
         }
@@ -387,14 +382,12 @@ ig.module('impact.font').requires('impact.image').defines(function() {
             var width = 0;
             for (var i = 0; i < text.length; i++) {
                 var c = text.charCodeAt(i);
-                c = c > minus ? c - minus : c;
-                width += this.widthMap[c - this.firstChar] + 1;
+                width += this.getWidthMap[c - this.firstChar] + 1;
             }
             x -= align == ig.Font.ALIGN.CENTER ? width / 2 : width;
         }
         for (var i = 0; i < text.length; i++) {
             var c = text.charCodeAt(i);
-            c = c > minus ? c - minus : c;
             x += this._drawChar(c - this.firstChar, x, y);
         }
     },_drawChar: function(c, targetX, targetY) {
@@ -435,6 +428,13 @@ ig.module('impact.font').requires('impact.image').defines(function() {
         }
         this.widthMap.push(currentWidth);
         this.indices.push(x - currentWidth);
+    },getWidthMap: function(index){
+        var firstCyrillicCharCode = 1072, lastCyrillicCharCode = 1105;
+        if (index >= firstCyrillicCharCode - this.firstChar && index <= lastCyrillicCharCode){
+            return this.widthMap.Cyrillic;
+        } else {
+            return this.widthMap[index];
+        }
     }});
     ig.Font.ALIGN = {LEFT: 0,RIGHT: 1,CENTER: 2};
 });
@@ -1498,7 +1498,7 @@ ig.module('game.menus').requires('impact.font').defines(function() {
         this.ok();
         ig.system.canvas.style.cursor = 'auto';
     }});
-    Menu = ig.Class.extend({clearColor: null,name: null,font: new ig.Font('media/fonts/tungsten-18.png'),fontSelected: new ig.Font('media/fonts/tungsten-18-orange.png'),fontTitle: new ig.Font('media/fonts/tungsten-48.png'),current: 0,itemClasses: [],items: [],init: function() {
+    Menu = ig.Class.extend({clearColor: null,name: null,font: new ig.Font('media/fonts/tungsten-18-ru-lined.png'),fontSelected: new ig.Font('media/fonts/tungsten-18-orange-ru.png'),fontTitle: new ig.Font('media/fonts/tungsten-48.png'),current: 0,itemClasses: [],items: [],init: function() {
         this.y = ig.system.height / 4 + 160;
         for (var i = 0; i < this.itemClasses.length; i++) {
             this.items.push(new this.itemClasses[i]());
@@ -1626,6 +1626,7 @@ ig.module('game.menus').requires('impact.font').defines(function() {
 // lib/game/cyrillic_keycodes.js
 ig.module('game.cyrillic_keycodes').defines(function() {
     CYRILLIC_KEYCODES = {65 : 'ф' , 66 : 'и' , 67 : 'с' , 68 : 'в' , 69 : 'у' , 70 : 'а' , 71 : 'п' , 72 : 'р' , 73 : 'ш' , 74 : 'о' , 75 : 'л' , 76 : 'д' , 77 : 'ь' , 78 : 'т' , 79 : 'щ' , 80 : 'з' , 81 : 'й' , 82 : 'к' , 83 : 'ы' , 84 : 'е' , 85 : 'г' , 86 : 'м' , 87 : 'ц' , 88 : 'ч' , 89 : 'н' , 90 : 'я', 192 : 'ё'};
+
 });
 
 // lib/game/words.js
