@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a2656cfe-4b30-499f-9130-53a734304e40" name="Default" comment="" />
+    <list default="true" id="a2656cfe-4b30-499f-9130-53a734304e40" name="Default" comment="">
+      <change type="DELETED" beforePath="E:\Work\Diplomas\Z-type\Z-Type_files\z-type-ru.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\Work\Diplomas\Z-type\media\sounds\endure.mp3" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Z-Type.htm" afterPath="$PROJECT_DIR$/Z-Type.htm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Z-Type_files/ztype-ru.js" afterPath="$PROJECT_DIR$/Z-Type_files/ztype-ru.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Z-Type_files/ztype.js" afterPath="$PROJECT_DIR$/Z-Type_files/ztype.js" />
+    </list>
     <ignored path="Z-type.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -23,7 +31,16 @@
       <file leaf-file-name="Z-Type.htm" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Z-Type.htm">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="117" column="56" selection-start="2304" selection-end="2304" vertical-scroll-proportion="-0.65384614">
+            <state line="131" column="23" selection-start="2706" selection-end="2706" vertical-scroll-proportion="-75.84615">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ztype.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Z-Type_files/ztype.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="1987" column="0" selection-start="126008" selection-end="126008" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -32,7 +49,7 @@
       <file leaf-file-name="ztype-ru.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Z-Type_files/ztype-ru.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="201" column="13" selection-start="44340" selection-end="44340" vertical-scroll-proportion="0.20307167">
+            <state line="2007" column="35" selection-start="90210" selection-end="90210" vertical-scroll-proportion="0.39078498">
               <folding />
             </state>
           </provider>
@@ -45,13 +62,19 @@
       <setting name="OPEN_NEW_TAB" value="false" />
     </FindUsagesManager>
   </component>
+  <component name="Git.Settings">
+    <option name="PUSH_AUTO_UPDATE" value="true" />
+    <option name="SYNC_SETTING" value="DONT" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/Z-Type_files/ztype.js" />
         <option value="$PROJECT_DIR$/Z-Type_files/z-type-ru.js" />
-        <option value="$PROJECT_DIR$/Z-Type_files/ztype-ru.js" />
+        <option value="$PROJECT_DIR$/Z-Type_files/ztype-ru_stable.js" />
         <option value="$PROJECT_DIR$/Z-Type.htm" />
+        <option value="$PROJECT_DIR$/Z-Type_files/ztype.js" />
+        <option value="$PROJECT_DIR$/Z-Type_files/ztype-ru.js" />
       </list>
     </option>
   </component>
@@ -61,7 +84,7 @@
     <option name="width" value="1382" />
     <option name="height" value="784" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
     <OptionsSetting value="true" id="Checkout" />
@@ -125,8 +148,12 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -144,6 +171,25 @@
     <list size="0" />
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false">
+    <option name="USER" value="" />
+    <option name="PASSWORD" value="" />
+    <option name="mySSHConnectionTimeout" value="30000" />
+    <option name="mySSHReadTimeout" value="30000" />
+    <option name="LAST_MERGED_REVISION" />
+    <option name="MERGE_DRY_RUN" value="false" />
+    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
+    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
+    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
+    <option name="DETECT_NESTED_COPIES" value="true" />
+    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
+    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
+    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
+    <option name="FORCE_UPDATE" value="false" />
+    <option name="IGNORE_EXTERNALS" value="false" />
+    <configuration useDefault="false">C:\Users\Dangel\AppData\Roaming\Subversion</configuration>
+    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="a2656cfe-4b30-499f-9130-53a734304e40" name="Default" comment="" />
@@ -156,19 +202,20 @@
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
     <editor active="true" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32852563" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32852563" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24944155" sideWeight="0.67147434" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32852563" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32852563" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -209,7 +256,7 @@
     <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" />
+    <option name="LAST_COMMIT_MESSAGE" value="Cyrillic input completed.&#10;game.main.keydown func" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -222,21 +269,22 @@
     <option name="UPDATE_GROUP_BY_CHANGELIST" value="false" />
     <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
+    <MESSAGE value="Cyrillic input completed.&#10;game.main.keydown func" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Z-Type_files/ztype-ru.js">
+    <entry file="file://$PROJECT_DIR$/Z-Type.htm">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="222" column="12" selection-start="52049" selection-end="52049" vertical-scroll-proportion="0.0">
+        <state line="132" column="11" selection-start="2916" selection-end="2916" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Z-Type_files/z-type-ru.js">
+    <entry file="file://$PROJECT_DIR$/Z-Type_files/ztype-ru.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="350" column="39" selection-start="14555" selection-end="14582" vertical-scroll-proportion="0.0">
+        <state line="340" column="9" selection-start="13170" selection-end="13170" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -248,20 +296,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Z-Type_files/ztype-ru.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="222" column="12" selection-start="52049" selection-end="52049" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Z-Type_files/z-type-ru.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2149" column="2" selection-start="102924" selection-end="102924" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Z-Type.htm">
       <provider selected="true" editor-type-id="text-editor">
         <state line="118" column="4" selection-start="2328" selection-end="2328" vertical-scroll-proportion="0.0">
@@ -269,16 +303,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Z-Type_files/ztype-ru.js">
+    <entry file="file://$PROJECT_DIR$/Z-Type.htm">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="222" column="12" selection-start="52049" selection-end="52049" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Z-Type_files/z-type-ru.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2149" column="2" selection-start="102924" selection-end="102924" vertical-scroll-proportion="0.0">
+        <state line="117" column="4" selection-start="2252" selection-end="2252" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -290,49 +317,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Z-Type_files/ztype-ru.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="217" column="74" selection-start="51005" selection-end="51005" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Z-Type.htm">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="117" column="4" selection-start="2252" selection-end="2252" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Z-Type_files/ztype-ru.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="215" column="74" selection-start="50841" selection-end="50841" vertical-scroll-proportion="0.0">
+        <state line="131" column="23" selection-start="2706" selection-end="2706" vertical-scroll-proportion="-75.84615">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Z-Type_files/ztype.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="207" column="0" selection-start="46484" selection-end="46484" vertical-scroll-proportion="-7.48" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Z-Type_files/z-type-ru.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="374" column="16" selection-start="15761" selection-end="15761" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Z-Type.htm">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="117" column="56" selection-start="2304" selection-end="2304" vertical-scroll-proportion="-0.65384614">
+        <state line="1987" column="0" selection-start="126008" selection-end="126008" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Z-Type_files/ztype-ru.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="201" column="13" selection-start="44340" selection-end="44340" vertical-scroll-proportion="0.20307167">
+        <state line="2007" column="35" selection-start="90210" selection-end="90210" vertical-scroll-proportion="0.39078498">
           <folding />
         </state>
       </provider>
