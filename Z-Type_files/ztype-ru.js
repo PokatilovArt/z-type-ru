@@ -364,7 +364,7 @@ ig.module('impact.image').defines(function() {
 // lib/impact/font.js
 ig.baked = true;
 ig.module('impact.font').requires('impact.image').defines(function() {
-    ig.Font = ig.Image.extend({widthMap: [],indices: [],firstChar: 32,firstCyrillicChar: 1072,lastCyrillicChar: 1105,height: 0,onload: function(ev) {
+    ig.Font = ig.Image.extend({widthMap: [],indices: [],firstChar: 32,height: 0,onload: function(ev) {
         this._loadMetrics(this.data);
         this.parent(ev);
     },widthForString: function(s) {
@@ -431,8 +431,8 @@ ig.module('impact.font').requires('impact.image').defines(function() {
         this.widthMap.push(currentWidth);
         this.indices.push(x - currentWidth);
     },getCharIndex: function(index){
-        if (index >= this.firstCyrillicChar && index <= this.lastCyrillicChar){
-            return index - this.firstCyrillicChar + 1;
+        if (index >= firstCyrillicChar && index <= lastCyrillicChar){
+            return index - firstCyrillicChar + 1;
         } else {
             return index - this.firstChar;
         }
@@ -759,7 +759,7 @@ ig.module('impact.system').requires('impact.timer', 'impact.image').defines(func
 // lib/impact/input.js
 ig.baked = true;
 ig.module('impact.input').defines(function() {
-    ig.KEY = {'TILDE': 0,'MOUSE1': -1,'MOUSE2': -3,'MWHEEL_UP': -4,'MWHEEL_DOWN': -5,'BACKSPACE': 8,'TAB': 9,'ENTER': 13,'PAUSE': 19,'CAPS': 20,'ESC': 27,'SPACE': 32,'PAGE_UP': 33,'PAGE_DOWN': 34,'END': 35,'HOME': 36,'LEFT_ARROW': 37,'UP_ARROW': 38,'RIGHT_ARROW': 39,'DOWN_ARROW': 40,'INSERT': 45,'DELETE': 46,'0': 48,'1': 49,'2': 50,'3': 51,'4': 52,'5': 53,'6': 54,'7': 55,'8': 56,'9': 57,'SEMICOLON': 59,'A': 65,'B': 66,'C': 67,'D': 68,'E': 69,'F': 70,'G': 71,'H': 72,'I': 73,'J': 74,'K': 75,'L': 76,'M': 77,'N': 78,'O': 79,'P': 80,'Q': 81,'R': 82,'S': 83,'T': 84,'U': 85,'V': 86,'W': 87,'X': 88,'Y': 89,'Z': 90,'NUMPAD_0': 96,'NUMPAD_1': 97,'NUMPAD_2': 98,'NUMPAD_3': 99,'NUMPAD_4': 100,'NUMPAD_5': 101,'NUMPAD_6': 102,'NUMPAD_7': 103,'NUMPAD_8': 104,'NUMPAD_9': 105,'MULTIPLY': 106,'ADD': 107,'SUBSTRACT': 109,'DECIMAL': 110,'DIVIDE': 111,'F1': 112,'F2': 113,'F3': 114,'F4': 115,'F5': 116,'F6': 117,'F7': 118,'F8': 119,'F9': 120,'F10': 121,'F11': 122,'F12': 123,'SHIFT': 16,'CTRL': 17,'ALT': 18,'PLUS': 187,'COMMA': 188,'MINUS': 189,'PERIOD': 190,'TILDE RUS': 192,'LEFT SQUARE BRACKET': 219,'RIGHT SQUARE BRACKET':221,'APOSTROPHE':222};
+    ig.KEY = {'MOUSE1': -1,'MOUSE2': -3,'MWHEEL_UP': -4,'MWHEEL_DOWN': -5,'BACKSPACE': 8,'TAB': 9,'ENTER': 13,'PAUSE': 19,'CAPS': 20,'ESC': 27,'SPACE': 32,'PAGE_UP': 33,'PAGE_DOWN': 34,'END': 35,'HOME': 36,'LEFT_ARROW': 37,'UP_ARROW': 38,'RIGHT_ARROW': 39,'DOWN_ARROW': 40,'INSERT': 45,'DELETE': 46,'0': 48,'1': 49,'2': 50,'3': 51,'4': 52,'5': 53,'6': 54,'7': 55,'8': 56,'9': 57,'SEMICOLON': 59,'A': 65,'B': 66,'C': 67,'D': 68,'E': 69,'F': 70,'G': 71,'H': 72,'I': 73,'J': 74,'K': 75,'L': 76,'M': 77,'N': 78,'O': 79,'P': 80,'Q': 81,'R': 82,'S': 83,'T': 84,'U': 85,'V': 86,'W': 87,'X': 88,'Y': 89,'Z': 90,'NUMPAD_0': 96,'NUMPAD_1': 97,'NUMPAD_2': 98,'NUMPAD_3': 99,'NUMPAD_4': 100,'NUMPAD_5': 101,'NUMPAD_6': 102,'NUMPAD_7': 103,'NUMPAD_8': 104,'NUMPAD_9': 105,'MULTIPLY': 106,'ADD': 107,'SUBSTRACT': 109,'DECIMAL': 110,'DIVIDE': 111,'F1': 112,'F2': 113,'F3': 114,'F4': 115,'F5': 116,'F6': 117,'F7': 118,'F8': 119,'F9': 120,'F10': 121,'F11': 122,'F12': 123,'SHIFT': 16,'CTRL': 17,'ALT': 18,'PLUS': 187,'COMMA': 188,'MINUS': 189,'PERIOD': 190,'TILDE RUS': 192,'LEFT SQUARE BRACKET': 219,'RIGHT SQUARE BRACKET':221,'APOSTROPHE':222};
     ig.Input = ig.Class.extend({bindings: {},actions: {},locks: {},delayedKeyup: [],isUsingMouse: false,isUsingKeyboard: false,mouse: {x: 0,y: 0},initMouse: function() {
         if (this.isUsingMouse) {
             return;
@@ -1627,7 +1627,8 @@ ig.module('game.menus').requires('impact.font').defines(function() {
 // lib/game/cyrillic_keycodes.js
 ig.module('game.cyrillic_keycodes').defines(function() {
     CYRILLIC_KEYCODES = {59 : 'ж' ,65 : 'ф' , 66 : 'и' , 67 : 'с' , 68 : 'в' , 69 : 'у' , 70 : 'а' , 71 : 'п' , 72 : 'р' , 73 : 'ш' , 74 : 'о' , 75 : 'л' , 76 : 'д' , 77 : 'ь' , 78 : 'т' , 79 : 'щ' , 80 : 'з' , 81 : 'й' , 82 : 'к' , 83 : 'ы' , 84 : 'е' , 85 : 'г' , 86 : 'м' , 87 : 'ц' , 88 : 'ч' , 89 : 'н' , 90 : 'я' , 188 : 'б' , 190 : 'ю' , 192 : 'ё' , 219 : 'х' , 221 : 'ъ' , 222 : 'э'};
-
+    firstCyrillicChar = 1072;
+    lastCyrillicChar = 1105;
 });
 
 // lib/game/words.js
@@ -1660,7 +1661,7 @@ ig.module('game.entities.particle').requires('impact.entity').defines(function()
 // lib/game/entities/enemy.js
 ig.baked = true;
 ig.module('game.entities.enemy').requires('impact.entity', 'impact.font', 'game.words', 'game.entities.particle').defines(function() {
-    EntityEnemy = ig.Entity.extend({word: 'none',remainingWord: 'none',health: 8,currentLetter: 0,targeted: false,font: new ig.Font('media/fonts/tungsten-18-ru-lined-1.png'),fontActive: new ig.Font('media/fonts/tungsten-18-orange-ru-lined-1.png'),speed: 10,friction: {x: 100,y: 100},hitTimer: null,dead: false,angle: 0,wordLength: {min: 8,max: 8},soundHit: new ig.Sound('media/sounds/hit.ogg'),type: ig.Entity.TYPE.B,checkAgainst: ig.Entity.TYPE.A,init: function(x, y, settings) {
+    EntityEnemy = ig.Entity.extend({word: 'none',remainingWord: 'none',health: 8,currentLetter: 0,targeted: false,font: new ig.Font('media/fonts/tungsten-18-ru.png'),fontActive: new ig.Font('media/fonts/tungsten-18-orange-ru.png'),speed: 10,friction: {x: 100,y: 100},hitTimer: null,dead: false,angle: 0,wordLength: {min: 8,max: 8},soundHit: new ig.Sound('media/sounds/hit.ogg'),type: ig.Entity.TYPE.B,checkAgainst: ig.Entity.TYPE.A,init: function(x, y, settings) {
         this.parent(x, y, settings);
         this.health = Math.random().map(0, 1, this.wordLength.min, this.wordLength.max).round();
         this.word = this.getWordWithLength(this.health);
@@ -2008,6 +2009,7 @@ ig.module('plugins.impact-splash-loader').requires('impact.loader').defines(func
 // lib/game/main.js
 ig.baked = true;
 ig.module('game.main').requires('impact.game', 'impact.font', 'game.menus', 'game.entities.enemy-missle', 'game.entities.enemy-mine', 'game.entities.enemy-destroyer', 'game.entities.enemy-oppressor', 'game.entities.player', 'plugins.impact-splash-loader').defines(function() {
+    var keyServed = false;
     Number.zeroes = '000000000000';
     Number.prototype.zeroFill = function(d) {
         var s = this.toString();
@@ -2019,6 +2021,7 @@ ig.module('game.main').requires('impact.game', 'impact.font', 'game.menus', 'gam
         this.backgroundMaps.push(bgmap);
         ig.music.add(this.music);
         window.addEventListener('keydown', this.keydown.bind(this), false);
+        window.addEventListener('keypress', this.keypress.bind(this), false);
         ig.input.bind(ig.KEY.ENTER, 'ok');
         ig.input.bind(ig.KEY.SPACE, 'ok');
         ig.input.bind(ig.KEY.MOUSE1, 'click');
@@ -2092,23 +2095,84 @@ ig.module('game.main').requires('impact.game', 'impact.font', 'game.menus', 'gam
         this.targets[letter].push(ent);
     },unregisterTarget: function(letter, ent) {
         this.targets[letter].erase(ent);
-    },
-        keydown: function(event) {
+    },keydown: function(event) {
             if (event.target.type == 'text' || event.ctrlKey || event.shiftKey || event.altKey || this.mode != ZType.MODE.GAME || this.menu) {
+                keyServed = false;
                 return true;
             }
             var c = event.which;
             if (!(
                     (c > 64 && c < 91) || (c > 96 && c < 123)
-                    || (c === ig.KEY['SEMICOLON']) || (c === ig.KEY['COMMA']) || (c === ig.KEY['PERIOD']) || (c === ig.KEY['TILDE']) || (c === ig.KEY['TILDE RUS'])
+                    || (c === ig.KEY['SEMICOLON']) || (c === ig.KEY['COMMA']) || (c === ig.KEY['PERIOD']) || (c === ig.KEY['TILDE RUS'])
                     || (c === ig.KEY['LEFT SQUARE BRACKET']) || (c === ig.KEY['RIGHT SQUARE BRACKET']) || (c === ig.KEY['APOSTROPHE'])
                 )) {
+                keyServed = false;
                 return true;
             }
             event.stopPropagation();
             event.preventDefault();
             var cyrillic = CYRILLIC_KEYCODES[c],
                 letter = typeof(cyrillic) !== 'undefined' ? cyrillic : String.fromCharCode(c).toLowerCase();
+            if (!this.currentTarget) {
+                var potentialTargets = this.targets[letter];
+                var nearestDistance = -1;
+                var nearestTarget = null;
+                for (var i = 0; i < potentialTargets.length; i++) {
+                    var distance = this.player.distanceTo(potentialTargets[i]);
+                    if (distance < nearestDistance || !nearestTarget) {
+                        nearestDistance = distance;
+                        nearestTarget = potentialTargets[i];
+                    }
+                }
+                if (nearestTarget) {
+                    nearestTarget.target();
+                }
+                else {
+                    this.player.miss();
+                    this.multiplier = 1;
+                    this.streak = 0;
+                    this.misses++;
+                }
+            }
+            if (this.currentTarget) {
+                var c = this.currentTarget;
+                var hit = this.currentTarget.isHitBy(letter);
+                if (hit) {
+                    this.player.shoot(c);
+                    this.score += this.multiplier;
+                    this.hits++;
+                    this.streak++;
+                    if (ZType.MULTIPLIER_TIERS[this.streak]) {
+                        this.multiplier += 1;
+                    }
+                    if (c.dead) {
+                        this.kills++;
+                    }
+                }
+                else {
+                    this.player.miss();
+                    this.multiplier = 1;
+                    this.streak = 0;
+                    this.misses++;
+                }
+            }
+            keyServed = true;
+            return false;
+        },
+        keypress: function(event) {
+            if (keyServed === true){
+                return true;
+            }
+            if (event.target.type == 'text' || event.ctrlKey || event.shiftKey || event.altKey || this.mode != ZType.MODE.GAME || this.menu) {
+                return true;
+            }
+            var charCode = event.charCode;
+            if (!(charCode >= firstCyrillicChar && charCode <= lastCyrillicChar)) {
+                return true;
+            }
+            event.stopPropagation();
+            event.preventDefault();
+            var letter = String.fromCharCode(charCode).toLowerCase();
             if (!this.currentTarget) {
                 var potentialTargets = this.targets[letter];
                 var nearestDistance = -1;
