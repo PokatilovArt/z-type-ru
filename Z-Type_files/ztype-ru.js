@@ -1499,7 +1499,7 @@ ig.module('game.menus').requires('impact.font').defines(function() {
         this.ok();
         ig.system.canvas.style.cursor = 'auto';
     }});
-    Menu = ig.Class.extend({clearColor: null,name: null,font: new ig.Font('media/fonts/tungsten-18.png'),fontSelected: new ig.Font('media/fonts/tungsten-18-orange.png'),fontTitle: new ig.Font('media/fonts/tungsten-48.png'),current: 0,itemClasses: [],items: [],init: function() {
+    Menu = ig.Class.extend({clearColor: null,name: null,font: new ig.Font('Z-Type_files/media/fonts/tungsten-18.png'),fontSelected: new ig.Font('Z-Type_files/media/fonts/tungsten-18-orange.png'),fontTitle: new ig.Font('Z-Type_files/media/fonts/tungsten-48.png'),current: 0,itemClasses: [],items: [],init: function() {
         this.y = ig.system.height / 4 + 160;
         for (var i = 0; i < this.itemClasses.length; i++) {
             this.items.push(new this.itemClasses[i]());
@@ -1661,7 +1661,7 @@ ig.module('game.entities.particle').requires('impact.entity').defines(function()
 // lib/game/entities/enemy.js
 ig.baked = true;
 ig.module('game.entities.enemy').requires('impact.entity', 'impact.font', 'game.words', 'game.entities.particle').defines(function() {
-    EntityEnemy = ig.Entity.extend({word: 'none',remainingWord: 'none',health: 8,currentLetter: 0,targeted: false,font: new ig.Font('media/fonts/tungsten-18-ru.png'),fontActive: new ig.Font('media/fonts/tungsten-18-orange-ru.png'),speed: 10,friction: {x: 100,y: 100},hitTimer: null,dead: false,angle: 0,wordLength: {min: 8,max: 8},soundHit: new ig.Sound('media/sounds/hit.ogg'),type: ig.Entity.TYPE.B,checkAgainst: ig.Entity.TYPE.A,init: function(x, y, settings) {
+    EntityEnemy = ig.Entity.extend({word: 'none',remainingWord: 'none',health: 8,currentLetter: 0,targeted: false,font: new ig.Font('Z-Type_files/media/fonts/tungsten-18-ru.png'),fontActive: new ig.Font('Z-Type_files/media/fonts/tungsten-18-orange-ru.png'),speed: 10,friction: {x: 100,y: 100},hitTimer: null,dead: false,angle: 0,wordLength: {min: 8,max: 8},soundHit: new ig.Sound('Z-Type_files/media/sounds/hit.ogg'),type: ig.Entity.TYPE.B,checkAgainst: ig.Entity.TYPE.A,init: function(x, y, settings) {
         this.parent(x, y, settings);
         this.health = Math.random().map(0, 1, this.wordLength.min, this.wordLength.max).round();
         this.word = this.getWordWithLength(this.health);
@@ -1755,7 +1755,7 @@ ig.module('game.entities.enemy').requires('impact.entity', 'impact.font', 'game.
         other.kill();
         this.kill();
     }});
-    EntityExplosionParticle = EntityParticle.extend({lifetime: 0.5,fadetime: 0.5,vel: {x: 60,y: 60},animSheet: new ig.AnimationSheet('media/sprites/explosion.png', 32, 32),init: function(x, y, settings) {
+    EntityExplosionParticle = EntityParticle.extend({lifetime: 0.5,fadetime: 0.5,vel: {x: 60,y: 60},animSheet: new ig.AnimationSheet('Z-Type_files/media/sprites/explosion.png', 32, 32),init: function(x, y, settings) {
         this.addAnim('idle', 5, [0, 1, 2]);
         this.parent(x, y, settings);
     },draw: function() {
@@ -1771,7 +1771,7 @@ ig.module('game.entities.enemy').requires('impact.entity', 'impact.font', 'game.
 // lib/game/entities/enemy-missle.js
 ig.baked = true;
 ig.module('game.entities.enemy-missle').requires('game.entities.enemy').defines(function() {
-    EntityEnemyMissle = EntityEnemy.extend({size: {x: 8,y: 15},offset: {x: 6,y: 7},animSheet: new ig.AnimationSheet('media/sprites/missle.png', 20, 26),health: 4,speed: 35,targetTimer: null,wordLength: {min: 2,max: 5},init: function(x, y, settings) {
+    EntityEnemyMissle = EntityEnemy.extend({size: {x: 8,y: 15},offset: {x: 6,y: 7},animSheet: new ig.AnimationSheet('Z-Type_files/media/sprites/missle.png', 20, 26),health: 4,speed: 35,targetTimer: null,wordLength: {min: 2,max: 5},init: function(x, y, settings) {
         this.parent(x, y, settings);
         this.addAnim('idle', 1, [0]);
         this.angle = settings.angle;
@@ -1791,7 +1791,7 @@ ig.module('game.entities.enemy-missle').requires('game.entities.enemy').defines(
 // lib/game/entities/enemy-mine.js
 ig.baked = true;
 ig.module('game.entities.enemy-mine').requires('game.entities.enemy').defines(function() {
-    EntityEnemyMine = EntityEnemy.extend({size: {x: 12,y: 12},offset: {x: 10,y: 10},animSheet: new ig.AnimationSheet('media/sprites/mine.png', 32, 32),speed: 30,health: 6,wordLength: {min: 3,max: 6},init: function(x, y, settings) {
+    EntityEnemyMine = EntityEnemy.extend({size: {x: 12,y: 12},offset: {x: 10,y: 10},animSheet: new ig.AnimationSheet('Z-Type_files/media/sprites/mine.png', 32, 32),speed: 30,health: 6,wordLength: {min: 3,max: 6},init: function(x, y, settings) {
         this.parent(x, y, settings);
         this.addAnim('idle', 1, [0]);
     },update: function() {
@@ -1804,7 +1804,7 @@ ig.module('game.entities.enemy-mine').requires('game.entities.enemy').defines(fu
 // lib/game/entities/enemy-destroyer.js
 ig.baked = true;
 ig.module('game.entities.enemy-destroyer').requires('game.entities.enemy').defines(function() {
-    EntityEnemyDestroyer = EntityEnemy.extend({size: {x: 24,y: 34},offset: {x: 10,y: 8},animSheet: new ig.AnimationSheet('media/sprites/destroyer.png', 43, 58),health: 8,speed: 20,shootTimer: null,wordLength: {min: 7,max: 10},init: function(x, y, settings) {
+    EntityEnemyDestroyer = EntityEnemy.extend({size: {x: 24,y: 34},offset: {x: 10,y: 8},animSheet: new ig.AnimationSheet('Z-Type_files/media/sprites/destroyer.png', 43, 58),health: 8,speed: 20,shootTimer: null,wordLength: {min: 7,max: 10},init: function(x, y, settings) {
         this.parent(x, y, settings);
         this.addAnim('idle', 1, [0]);
         this.shootTimer = new ig.Timer(5);
@@ -1823,7 +1823,7 @@ ig.module('game.entities.enemy-destroyer').requires('game.entities.enemy').defin
 // lib/game/entities/enemy-oppressor.js
 ig.baked = true;
 ig.module('game.entities.enemy-oppressor').requires('game.entities.enemy').defines(function() {
-    EntityEnemyOppressor = EntityEnemy.extend({size: {x: 36,y: 58},offset: {x: 16,y: 10},animSheet: new ig.AnimationSheet('media/sprites/oppressor.png', 68, 88),health: 10,speed: 15,shootTimer: null,bullets: 16,wordLength: {min: 9,max: 12},init: function(x, y, settings) {
+    EntityEnemyOppressor = EntityEnemy.extend({size: {x: 36,y: 58},offset: {x: 16,y: 10},animSheet: new ig.AnimationSheet('Z-Type_files/media/sprites/oppressor.png', 68, 88),health: 10,speed: 15,shootTimer: null,bullets: 16,wordLength: {min: 9,max: 12},init: function(x, y, settings) {
         this.parent(x, y - 18, settings);
         this.addAnim('idle', 1, [0]);
         this.shootTimer = new ig.Timer(7);
@@ -1844,7 +1844,7 @@ ig.module('game.entities.enemy-oppressor').requires('game.entities.enemy').defin
             this.shootTimer.reset();
         }
     }});
-    EntityEnemyBullet = EntityEnemy.extend({size: {x: 2,y: 2},offset: {x: 8,y: 11},animSheet: new ig.AnimationSheet('media/sprites/bullet.png', 20, 24),health: 1,speed: 50,wordLength: {min: 1,max: 1},init: function(x, y, settings) {
+    EntityEnemyBullet = EntityEnemy.extend({size: {x: 2,y: 2},offset: {x: 8,y: 11},animSheet: new ig.AnimationSheet('Z-Type_files/media/sprites/bullet.png', 20, 24),health: 1,speed: 50,wordLength: {min: 1,max: 1},init: function(x, y, settings) {
         this.parent(x, y, settings);
         this.addAnim('idle', 1, [0]);
         this.angle = settings.angle;
@@ -1855,7 +1855,7 @@ ig.module('game.entities.enemy-oppressor').requires('game.entities.enemy').defin
 // lib/game/entities/player.js
 ig.baked = true;
 ig.module('game.entities.player').requires('impact.entity', 'game.entities.particle').defines(function() {
-    EntityPlayer = ig.Entity.extend({animSheet: new ig.AnimationSheet('media/sprites/ship.png', 24, 24),targetAngle: 0,size: {x: 8,y: 8},offset: {x: 8,y: 8},angle: 0,targetAngle: 0,soundShoot: new ig.Sound('media/sounds/plasma.ogg'),soundMiss: new ig.Sound('media/sounds/click.ogg'),soundExplode: new ig.Sound('media/sounds/explosion.ogg'),type: ig.Entity.TYPE.A,init: function(x, y, settings) {
+    EntityPlayer = ig.Entity.extend({animSheet: new ig.AnimationSheet('Z-Type_files/media/sprites/ship.png', 24, 24),targetAngle: 0,size: {x: 8,y: 8},offset: {x: 8,y: 8},angle: 0,targetAngle: 0,soundShoot: new ig.Sound('Z-Type_files/media/sounds/plasma.ogg'),soundMiss: new ig.Sound('Z-Type_files/media/sounds/click.ogg'),soundExplode: new ig.Sound('Z-Type_files/media/sounds/explosion.ogg'),type: ig.Entity.TYPE.A,init: function(x, y, settings) {
         this.parent(x, y, settings);
         this.addAnim('idle', 60, [0]);
         this.addAnim('shoot', 0.05, [3, 2, 1, 0], true);
@@ -1896,7 +1896,7 @@ ig.module('game.entities.player').requires('impact.entity', 'game.entities.parti
         this.currentAnim = this.anims.miss.rewind();
         this.soundMiss.play();
     }});
-    EntityPlasma = ig.Entity.extend({speed: 800,maxVel: {x: 1000,y: 1000},animSheet: new ig.AnimationSheet('media/sprites/plasma.png', 96, 96),size: {x: 4,y: 4},offset: {x: 46,y: 46},distance: 100000,init: function(x, y, settings) {
+    EntityPlasma = ig.Entity.extend({speed: 800,maxVel: {x: 1000,y: 1000},animSheet: new ig.AnimationSheet('Z-Type_files/media/sprites/plasma.png', 96, 96),size: {x: 4,y: 4},offset: {x: 46,y: 46},distance: 100000,init: function(x, y, settings) {
         this.parent(x, y, settings);
         this.addAnim('idle', 1, [0]);
     },draw: function() {
@@ -1924,7 +1924,7 @@ ig.module('game.entities.player').requires('impact.entity', 'game.entities.parti
             this.kill();
         }
     }});
-    EntityExplosionParticleFast = EntityParticle.extend({lifetime: 2,fadetime: 2,maxVel: {x: 1000,y: 1000},vel: {x: 100,y: 100},animSheet: new ig.AnimationSheet('media/sprites/explosion.png', 32, 32),init: function(x, y, settings) {
+    EntityExplosionParticleFast = EntityParticle.extend({lifetime: 2,fadetime: 2,maxVel: {x: 1000,y: 1000},vel: {x: 100,y: 100},animSheet: new ig.AnimationSheet('Z-Type_files/media/sprites/explosion.png', 32, 32),init: function(x, y, settings) {
         this.addAnim('idle', 5, [0, 1, 2]);
         this.parent(x, y, settings);
     },draw: function() {
@@ -2015,7 +2015,7 @@ ig.module('game.main').requires('impact.game', 'impact.font', 'game.menus', 'gam
         var s = this.toString();
         return Number.zeroes.substr(0, d - s.length) + s;
     };
-    ZType = ig.Game.extend({font: new ig.Font('media/fonts/tungsten-18.png'),fontScore: new ig.Font('media/fonts/04b03-mono-digits.png'),fontTitle: new ig.Font('media/fonts/tungsten-48.png'),fontSelected: new ig.Font('media/fonts/tungsten-18-orange.png'),spawnTimer: null,targets: {},currentTarget: null,yScroll: 0,backdrop: new ig.Image('media/background/backdrop.png'),grid: new ig.Image('media/background/grid.png'),music: new ig.Sound('media/music/endure.ogg', false),menu: null,mode: 0,score: 0,streak: 0,hits: 0,misses: 0,multiplier: 1,wave: {},gameTime: 0,kills: 0,difficulty: 'NORMAL',init: function() {
+    ZType = ig.Game.extend({font: new ig.Font('Z-Type_files/media/fonts/tungsten-18.png'),fontScore: new ig.Font('Z-Type_files/media/fonts/04b03-mono-digits.png'),fontTitle: new ig.Font('Z-Type_files/media/fonts/tungsten-48.png'),fontSelected: new ig.Font('Z-Type_files/media/fonts/tungsten-18-orange.png'),spawnTimer: null,targets: {},currentTarget: null,yScroll: 0,backdrop: new ig.Image('Z-Type_files/media/background/backdrop.png'),grid: new ig.Image('Z-Type_files/media/background/grid.png'),music: new ig.Sound('Z-Type_files/media/music/endure.ogg', false),menu: null,mode: 0,score: 0,streak: 0,hits: 0,misses: 0,multiplier: 1,wave: {},gameTime: 0,kills: 0,difficulty: 'NORMAL',init: function() {
         var bgmap = new ig.BackgroundMap(62, [[1]], this.grid);
         bgmap.repeat = true;
         this.backgroundMaps.push(bgmap);

@@ -2,9 +2,40 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a2656cfe-4b30-499f-9130-53a734304e40" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/media/fonts/tungsten-18-orange-ru.png" afterPath="$PROJECT_DIR$/media/fonts/tungsten-18-orange-ru.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/media/fonts/tungsten-18-ru.png" afterPath="$PROJECT_DIR$/media/fonts/tungsten-18-ru.png" />
+      <change type="DELETED" beforePath="E:\Work\Diplomas\Z-type\media\background\backdrop.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\Work\Diplomas\Z-type\media\background\grid.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\Work\Diplomas\Z-type\media\fonts\04b03-mono-digits.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\Work\Diplomas\Z-type\media\fonts\tungsten-18-orange-ru-lined-1.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\Work\Diplomas\Z-type\media\fonts\tungsten-18-orange-ru-lined.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\Work\Diplomas\Z-type\media\fonts\tungsten-18-orange-ru.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\Work\Diplomas\Z-type\media\fonts\tungsten-18-orange.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\Work\Diplomas\Z-type\media\fonts\tungsten-18-ru-lined-1.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\Work\Diplomas\Z-type\media\fonts\tungsten-18-ru-lined.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\Work\Diplomas\Z-type\media\fonts\tungsten-18-ru.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\Work\Diplomas\Z-type\media\fonts\tungsten-18.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\Work\Diplomas\Z-type\media\fonts\tungsten-48.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\Work\Diplomas\Z-type\media\made-with-impact.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\Work\Diplomas\Z-type\media\music\endure.mp3" afterPath="" />
+      <change type="DELETED" beforePath="E:\Work\Diplomas\Z-type\media\music\endure.ogg" afterPath="" />
+      <change type="DELETED" beforePath="E:\Work\Diplomas\Z-type\media\sounds\click.mp3" afterPath="" />
+      <change type="DELETED" beforePath="E:\Work\Diplomas\Z-type\media\sounds\click.ogg" afterPath="" />
+      <change type="DELETED" beforePath="E:\Work\Diplomas\Z-type\media\sounds\explosion.mp3" afterPath="" />
+      <change type="DELETED" beforePath="E:\Work\Diplomas\Z-type\media\sounds\explosion.ogg" afterPath="" />
+      <change type="DELETED" beforePath="E:\Work\Diplomas\Z-type\media\sounds\hit.mp3" afterPath="" />
+      <change type="DELETED" beforePath="E:\Work\Diplomas\Z-type\media\sounds\hit.ogg" afterPath="" />
+      <change type="DELETED" beforePath="E:\Work\Diplomas\Z-type\media\sounds\plasma.mp3" afterPath="" />
+      <change type="DELETED" beforePath="E:\Work\Diplomas\Z-type\media\sounds\plasma.ogg" afterPath="" />
+      <change type="DELETED" beforePath="E:\Work\Diplomas\Z-type\media\sprites\bullet.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\Work\Diplomas\Z-type\media\sprites\destroyer.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\Work\Diplomas\Z-type\media\sprites\explosion.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\Work\Diplomas\Z-type\media\sprites\mine.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\Work\Diplomas\Z-type\media\sprites\missle.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\Work\Diplomas\Z-type\media\sprites\oppressor.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\Work\Diplomas\Z-type\media\sprites\plasma.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\Work\Diplomas\Z-type\media\sprites\ship.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\Work\Diplomas\Z-type\phobos.png" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Z-Type.htm" afterPath="$PROJECT_DIR$/Z-Type.htm" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Z-Type_files/ztype-ru.js" afterPath="$PROJECT_DIR$/Z-Type_files/ztype-ru.js" />
     </list>
     <ignored path="Z-type.iws" />
@@ -25,10 +56,10 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Z-Type.htm" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Z-Type.htm" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Z-Type.htm">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="121" column="12" selection-start="2444" selection-end="2444" vertical-scroll-proportion="-5.0384617">
+            <state line="8" column="61" selection-start="388" selection-end="388" vertical-scroll-proportion="0.23734729">
               <folding />
             </state>
           </provider>
@@ -43,10 +74,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ztype-ru.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="ztype-ru.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Z-Type_files/ztype-ru.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1773" column="117" selection-start="76838" selection-end="76838" vertical-scroll-proportion="0.8259386">
+            <state line="1495" column="25" selection-start="62503" selection-end="62503" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -112,7 +143,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -147,6 +177,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -154,8 +185,8 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -218,17 +249,21 @@
       <created>1358851432794</created>
       <updated>1358851432794</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Russian z-type completed.&#10;Working good with both &quot;ru&quot; and &quot;en&quot; keyboard layouts.">
+      <created>1358898717561</created>
+      <updated>1358898717561</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32852563" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24944155" sideWeight="0.67147434" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20923306" sideWeight="0.67147434" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32852563" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -279,7 +314,7 @@
     <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="All is working with &quot;en&quot; keyboard layout&#10;Committing media files" />
+    <option name="LAST_COMMIT_MESSAGE" value="Russian z-type completed.&#10;Working good with both &quot;ru&quot; and &quot;en&quot; keyboard layouts." />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -296,6 +331,7 @@
     <MESSAGE value="Fonts module changed.&#10;game.menus&#10;&#10;tungsten-18-ru-lined.png created" />
     <MESSAGE value="All is working with &quot;en&quot; keyboard layout" />
     <MESSAGE value="All is working with &quot;en&quot; keyboard layout&#10;Committing media files" />
+    <MESSAGE value="Russian z-type completed.&#10;Working good with both &quot;ru&quot; and &quot;en&quot; keyboard layouts." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -401,16 +437,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Z-Type.htm">
+    <entry file="file://$PROJECT_DIR$/Z-Type_files/ztype-ru.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="121" column="12" selection-start="2444" selection-end="2444" vertical-scroll-proportion="-5.0384617">
+        <state line="1495" column="25" selection-start="62503" selection-end="62503" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Z-Type_files/ztype-ru.js">
+    <entry file="file://$PROJECT_DIR$/Z-Type.htm">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1773" column="117" selection-start="76838" selection-end="76838" vertical-scroll-proportion="0.8259386">
+        <state line="8" column="61" selection-start="388" selection-end="388" vertical-scroll-proportion="0.23734729">
           <folding />
         </state>
       </provider>
